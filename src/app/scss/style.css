@@ -189,7 +189,7 @@ body:after {
   margin-bottom: 32px;
 }
 .cards__image {
-  width: 576.5px;
+  width: 113%;
   height: 284px;
 }
 @media screen and (max-width: 1622px) {
