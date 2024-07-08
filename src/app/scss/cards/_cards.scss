@@ -117,6 +117,8 @@
   }
   @media screen and (max-width: 660px) {
     &__card-wrapper {
+      min-width: 80%;
+      max-width: 100%;
       align-items: center;
       flex-direction: column;
     }

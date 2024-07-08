@@ -14,8 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   font-family: "Proxima Nova", sans-serif;
   background: url("../assets/img/bg.jpeg");
 }
@@ -41,6 +39,11 @@ body:after {
     right: 0;
     content: url("../assets/img/space-660.png");
   }
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
 }
 
 .video {
@@ -98,9 +101,9 @@ body:after {
 }
 @media screen and (max-width: 660px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 660px;
+    padding-left: 19px;
+    padding-right: 25px;
+    max-width: 100%;
   }
 }
 .icon-list__wrapper {
@@ -244,6 +247,8 @@ body:after {
 }
 @media screen and (max-width: 660px) {
   .cards__card-wrapper {
+    min-width: 80%;
+    max-width: 100%;
     align-items: center;
     flex-direction: column;
   }
@@ -380,6 +385,28 @@ body:after {
   align-items: center;
   display: flex;
 }
+.footer__semechka-wrapper.first::before {
+  content: "";
+  position: absolute;
+  background: black;
+  bottom: -100%;
+  left: -15%;
+  width: 14px;
+  height: 3px;
+  border-radius: 50px/10px;
+  display: block; /*adjust as needed*/
+}
+.footer__semechka-wrapper.second::before {
+  content: "";
+  position: absolute;
+  background: black;
+  bottom: -100%;
+  left: 25%;
+  width: 22px;
+  height: 5px;
+  border-radius: 50px/10px;
+  display: block; /*adjust as needed*/
+}
 .footer__text {
   width: 396.49px;
   transform: rotate(4.13deg);
@@ -405,13 +432,6 @@ body:after {
   position: absolute;
   content: url("../assets/img/flash.png");
 }
-.footer__left .footer__text::before {
-  bottom: -80%;
-  left: 97%;
-  position: absolute;
-  content: url("../assets/img/semechka2.png");
-  display: block; /*adjust as needed*/
-}
 .footer__image-wrapper {
   margin-right: 129px;
   margin-left: 52px;
@@ -425,13 +445,6 @@ body:after {
   content: url("../assets/img/semechka.png");
   display: block; /*adjust as needed*/
 }
-.footer__image-wrapper::before {
-  position: absolute;
-  left: 110%;
-  bottom: -5%;
-  content: url("../assets/img/semechka3.png");
-  display: block; /*adjust as needed*/
-}
 .footer__bottom-wrapper {
   display: flex;
   justify-content: space-between;
@@ -442,33 +455,19 @@ body:after {
   font-weight: 600;
   line-height: 22px;
 }
-.footer__copyright::after {
-  content: "";
+.footer__semechka-wrapper.first {
   position: absolute;
-  background: black;
-  left: 35%;
-  width: 14px;
-  height: 2px;
-  border-radius: 50px/10px;
-  display: block; /*adjust as needed*/
+  top: 85%;
+  left: -30%;
 }
-.footer__number::after {
-  content: "";
+.footer__semechka-wrapper.second {
   position: absolute;
-  background: black;
-  bottom: -3%;
-  left: 68%;
-  width: 22px;
-  height: 5px;
-  border-radius: 50px/10px;
-  display: block; /*adjust as needed*/
+  top: 92%;
+  left: 110%;
 }
 @media screen and (max-width: 1622px) {
   .footer {
     padding-bottom: 0;
-  }
-  .footer::after {
-    height: 120%;
   }
   .footer__text {
     width: 300px;
@@ -498,8 +497,13 @@ body:after {
     transform: translateX(5px);
     left: 150%;
   }
-  .footer__number::after {
-    left: 75%;
+  .footer__semechka-wrapper.first::before {
+    bottom: -55%;
+    left: -15%;
+  }
+  .footer__semechka-wrapper.second::before {
+    bottom: -60%;
+    left: 25%;
   }
   .footer__left .footer__text::after {
     top: 100%;
@@ -508,22 +512,19 @@ body:after {
     content: url("../assets/img/flash.png");
   }
   .footer__left .footer__text::before {
-    bottom: -80%;
-    left: 97%;
-    transform: scale(0.7);
-    position: absolute;
-    content: url("../assets/img/semechka2.png");
-    display: block; /*adjust as needed*/
-  }
-  .footer__left .footer__text::before {
     bottom: -110%;
     left: 95%;
   }
   .footer__copyright, .footer__number {
     font-size: 14px;
   }
-  .footer__copyright::after {
-    bottom: -15%;
+  .footer__semechka-wrapper.first {
+    top: 90%;
+    left: -45%;
+  }
+  .footer__semechka-wrapper.second {
+    top: 80%;
+    left: 157%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -546,18 +547,35 @@ body:after {
     bottom: -75%;
     left: 95%;
   }
+  .footer__left {
+    transform: translateY(-20%);
+  }
   .footer__right .footer__text::after {
     right: 30%;
   }
-  .footer__copyright::after {
+  .footer__semechka-wrapper.first::after {
     left: 31%;
   }
-  .footer__number::after {
-    transform: translateX(-45px);
+  .footer__semechka-wrapper.second::before {
+    bottom: -55%;
+    transform: translateX(5px);
   }
   .footer__image-wrapper::before {
     transform: scale(0.7);
     left: 105%;
+  }
+  .footer__semechka-wrapper.first {
+    top: 90%;
+    left: -25%;
+    transform: scale(0.8);
+  }
+  .footer__semechka-wrapper.second {
+    top: 85%;
+    left: 100%;
+    transform: scale(0.8);
+  }
+  .footer::after {
+    border-radius: 20% 20% 0 0;
   }
 }
 @media screen and (max-width: 660px) {
@@ -565,7 +583,7 @@ body:after {
     padding-bottom: 0;
   }
   .footer::after {
-    border-radius: 50% 30% 0 0;
+    border-radius: 10% 10% 0 0;
     width: 100%;
     height: 100%;
   }
@@ -588,6 +606,13 @@ body:after {
     font-size: 9px;
     width: 138px;
   }
+  .footer__left {
+    transform: translateX(10%);
+  }
+  .footer__right {
+    z-index: 1;
+    transform: translateX(-15%);
+  }
   .footer__left .footer__text::after {
     transform: scale(0.8);
     top: 88%;
@@ -597,9 +622,9 @@ body:after {
     bottom: -100%;
     left: 65%;
   }
-  .footer__copyright::after {
+  .footer__semechka.second::after {
     bottom: 20%;
-    left: 23%;
+    left: 30%;
   }
   .footer__right .footer__text {
     transform: translateY(70%);
@@ -612,14 +637,28 @@ body:after {
     right: 40%;
   }
   .footer__image-wrapper::after {
-    right: 0%;
+    left: 90%;
+    top: 10%;
+    z-index: 2;
   }
   .footer__image-wrapper::before {
     top: 70%;
-    left: 105%;
+    left: 90%;
+    z-index: 2;
   }
-  .footer__number::after {
+  .footer__semechka.first::before {
+    left: 70%;
     top: 85%;
     transform: translateX(0);
+  }
+  .footer__semechka-wrapper.first {
+    top: 60%;
+    left: -30%;
+    transform: scale(0.8);
+  }
+  .footer__semechka-wrapper.second {
+    transform: scale(0.6);
+    top: 75%;
+    left: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

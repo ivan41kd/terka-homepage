@@ -1,4 +1,6 @@
 import image from '../../../assets/img/footer-img.png';
+import semechka2 from '../../../assets/img/semechka2.png';
+import semechka from '../../../assets/img/semechka3.png';
 import Image from 'next/image';
 export const Footer = () => {
   return (
@@ -12,6 +14,7 @@ export const Footer = () => {
                 который нужен тебе именно сейчас. Важно в нём это разглядеть.
               </div>
             </div>
+
             <div className='footer__image-wrapper'>
               <Image
                 priority
@@ -19,7 +22,24 @@ export const Footer = () => {
                 alt='image'
                 className='footer__image'
               />
+              <div className='footer__semechka-wrapper first'>
+                <Image
+                  priority
+                  src={semechka2}
+                  alt='image'
+                  className='footer__semechka first'
+                />
+              </div>
+              <div className='footer__semechka-wrapper second'>
+                <Image
+                  priority
+                  src={semechka}
+                  alt='image'
+                  className='footer__semechka second'
+                />
+              </div>
             </div>
+
             <div className='footer__right'>
               <div className='footer__text'>
                 Наверное, Тёрку делают колдуны и ведьмы!

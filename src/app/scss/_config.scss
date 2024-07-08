@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: fit-content;
   font-family: 'Proxima Nova', sans-serif;
   background: url('../assets/img/bg.jpeg');
   &:after {
@@ -40,6 +39,10 @@ body {
   }
 }
 
+.home {
+  position: relative;
+  overflow: hidden;
+}
 .video {
   position: absolute;
   z-index: -1;
