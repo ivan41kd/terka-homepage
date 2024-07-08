@@ -1,0 +1,21 @@
+.main {
+  padding-top: 53px;
+  position: relative;
+  z-index: 2;
+  &__wrapper {
+    display: flex;
+    margin-bottom: 33px;
+  }
+  @media screen and (max-width: 1622px) {
+    padding-top: 33px;
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+      flex-direction: column;
+      margin-bottom: 36px;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    padding-top: 33px;
+  }
+}

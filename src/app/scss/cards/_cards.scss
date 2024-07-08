@@ -1,0 +1,127 @@
+.cards {
+  &__wrapper {
+    column-gap: 44px;
+    display: flex;
+  }
+  &__card {
+    justify-content: space-between;
+    cursor: pointer;
+    width: 640px;
+    display: flex;
+    padding: 32px;
+    border-radius: 61px;
+    box-shadow: 1px 1px 0px 0px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.97);
+  }
+
+  &__card:hover &__next {
+    transition: all 0.3s ease-in-out;
+    path {
+      transition: all 0.3s ease-in-out;
+      stroke: white;
+    }
+    line {
+      transition: all 0.3s ease-in-out;
+      stroke: white;
+    }
+  }
+  &__card:hover &__fill {
+    transition: all 0.3s ease-in-out;
+    transform: scale(400, 400);
+    fill: #303030;
+  }
+
+  &__card-wrapper {
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+  }
+  &__image-wrapper {
+    width: fit-content;
+  }
+  &__next {
+    transition: all 0.3s ease-in-out;
+    width: 80px;
+    transition: 0.5s;
+  }
+  &__fill {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    fill: #303030;
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53.59px;
+    margin-bottom: 20px;
+  }
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  &__image {
+    width: 576.5px;
+    height: 284px;
+  }
+  @media screen and (max-width: 1622px) {
+    &__card {
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 38.13px;
+      box-shadow: 0.63px 0.63px 0px 0px rgb(0, 0, 0);
+      background: rgba(255, 255, 255, 0.97);
+    }
+    &__title {
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 33px;
+      margin-bottom: 12px;
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 12.5px;
+      line-height: 15px;
+      margin-bottom: 20px;
+    }
+    &__image {
+      width: 360.31px;
+      height: 177.5px;
+    }
+    &__next {
+      transform: translateY(-30%);
+      width: 50px;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    &__card {
+      max-width: 667px;
+    }
+    &__wrapper {
+      row-gap: 27px;
+      flex-direction: column;
+    }
+    &__text-wrapper {
+      margin-right: 20px;
+    }
+    &__card-wrapper {
+      width: 100%;
+      flex-direction: row;
+    }
+    &__image {
+      width: 360px;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    &__card-wrapper {
+      align-items: center;
+      flex-direction: column;
+    }
+    &__image {
+      width: 254px;
+    }
+  }
+}
