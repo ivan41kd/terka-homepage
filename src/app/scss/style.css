@@ -83,7 +83,11 @@ body:after {
 
 .container {
   padding-left: 64px;
-  max-width: 1500px;
+  max-width: 100%;
+}
+
+.container.main {
+  padding-right: 300px;
 }
 
 @media screen and (max-width: 1622px) {
@@ -92,10 +96,16 @@ body:after {
     padding-right: 97px;
     max-width: 100%;
   }
+  .container.main {
+    padding-right: 64px;
+  }
 }
 @media screen and (max-width: 960px) {
   .container {
     padding-left: 50px;
+    padding-right: 20px;
+  }
+  .container.main {
     padding-right: 20px;
   }
 }
@@ -104,6 +114,9 @@ body:after {
     padding-left: 19px;
     padding-right: 25px;
     max-width: 100%;
+  }
+  .container.main {
+    padding-right: 25px;
   }
 }
 .icon-list__wrapper {
@@ -138,7 +151,8 @@ body:after {
 .cards__card {
   justify-content: space-between;
   cursor: pointer;
-  width: 640px;
+  max-width: 640px;
+  width: 100%;
   display: flex;
   padding: 32px;
   border-radius: 61px;
@@ -198,8 +212,7 @@ body:after {
 @media screen and (max-width: 1622px) {
   .cards__card {
     padding: 20px;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     border-radius: 38.13px;
     box-shadow: 0.63px 0.63px 0px 0px rgb(0, 0, 0);
     background: rgba(255, 255, 255, 0.97);
@@ -227,7 +240,8 @@ body:after {
 }
 @media screen and (max-width: 960px) {
   .cards__card {
-    max-width: 667px;
+    max-width: 600px;
+    width: 100%;
   }
   .cards__wrapper {
     row-gap: 27px;
@@ -241,8 +255,8 @@ body:after {
     flex-direction: row;
   }
   .cards__image {
-    width: 360px;
-    height: 100%;
+    width: 320px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 660px) {
@@ -253,7 +267,9 @@ body:after {
     flex-direction: column;
   }
   .cards__image {
-    width: 254px;
+    width: 100%;
+    height: 100px;
+    max-width: 360px;
   }
 }
 

@@ -11,7 +11,7 @@ export default function Home() {
           <source src='/space-bg.mp4' type='video/mp4' />
         </video>
         <main className='main'>
-          <div className='container'>
+          <div className='container main'>
             <div className='main__wrapper'>
               <IconList />
               <Cards />

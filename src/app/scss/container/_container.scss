@@ -1,6 +1,9 @@
 .container {
   padding-left: 64px;
-  max-width: 1500px;
+  max-width: 100%;
+}
+.container.main {
+  padding-right: 300px;
 }
 @media screen and (max-width: 1622px) {
   .container {
@@ -8,10 +11,16 @@
     padding-right: 97px;
     max-width: 100%;
   }
+  .container.main {
+    padding-right: 64px;
+  }
 }
 @media screen and (max-width: 960px) {
   .container {
     padding-left: 50px;
+    padding-right: 20px;
+  }
+  .container.main {
     padding-right: 20px;
   }
 }
@@ -20,5 +29,8 @@
     padding-left: 19px;
     padding-right: 25px;
     max-width: 100%;
+  }
+  .container.main {
+    padding-right: 25px;
   }
 }
