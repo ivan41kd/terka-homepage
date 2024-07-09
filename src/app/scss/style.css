@@ -90,7 +90,7 @@ body {
     padding-top: 33px;
   }
   .main__wrapper {
-    margin-bottom: 91px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 660px) {
@@ -260,7 +260,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   .cards__card {
-    max-width: 600px;
+    max-width: 610px;
     width: 100%;
   }
   .cards__wrapper {
@@ -459,16 +459,16 @@ body {
   transform: rotate(-2.07deg);
 }
 .footer__right .footer__text::after {
-  top: 95%;
+  top: 99%;
   right: 60%;
   position: absolute;
-  content: url("../assets/img/flash2.svg");
+  content: url("../assets/img/flash2.png");
 }
 .footer__left .footer__text::after {
-  top: 95%;
+  top: 99%;
   right: 5%;
   position: absolute;
-  content: url("../assets/img/flash.svg");
+  content: url("../assets/img/flash.png");
 }
 .footer__image-wrapper {
   margin-right: 129px;
@@ -528,11 +528,10 @@ body {
     transform: rotate(-2.07deg);
   }
   .footer__right .footer__text::after {
-    top: 50%;
+    top: 54%;
     right: 40%;
     transform: scale(0.4);
     position: absolute;
-    content: url("../assets/img/flash2.svg");
   }
   .footer__image-wrapper::before {
     transform: translateX(5px);
@@ -547,10 +546,9 @@ body {
     left: 25%;
   }
   .footer__left .footer__text::after {
-    top: 92%;
+    top: 98%;
     right: 5%;
     position: absolute;
-    content: url("../assets/img/flash.svg");
   }
   .footer__left .footer__text::before {
     bottom: -110%;
@@ -590,7 +588,7 @@ body {
     line-height: 22px;
   }
   .footer__left .footer__text::after {
-    top: 95%;
+    top: 99%;
     right: 5%;
   }
   .footer__left {
@@ -665,23 +663,27 @@ body {
   }
   .footer__left .footer__text::after {
     transform: scale(0.8);
-    top: 88%;
+    top: 93%;
     right: 30%;
   }
   .footer__left .footer__text::before {
     bottom: -100%;
     left: 65%;
   }
+  .footer__left .footer__text {
+    transform: rotate(4.13deg);
+  }
   .footer__semechka.second::after {
     bottom: 20%;
     left: 30%;
   }
   .footer__right .footer__text {
-    transform: translateY(70%);
+    transform: translateY(70%) rotate(-2.07deg);
     width: 100px;
+    border-radius: 15px;
   }
   .footer__right .footer__text::after {
-    content: url("../assets/img/flash-mobile.svg");
+    content: url("../assets/img/flash-mobile.png");
     transform: scale(1);
     top: 98%;
     right: 40%;

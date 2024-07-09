@@ -64,18 +64,18 @@
     width: 235px;
     transform: rotate(-2.07deg);
     &::after {
-      top: 95%;
+      top: 99%;
       right: 60%;
       position: absolute;
-      content: url('../assets/img/flash2.svg');
+      content: url('../assets/img/flash2.png');
     }
   }
   &__left &__text {
     &::after {
-      top: 95%;
+      top: 99%;
       right: 5%;
       position: absolute;
-      content: url('../assets/img/flash.svg');
+      content: url('../assets/img/flash.png');
     }
   }
   &__image-wrapper {
@@ -135,11 +135,10 @@
       width: 160px;
       transform: rotate(-2.07deg);
       &::after {
-        top: 50%;
+        top: 54%;
         right: 40%;
         transform: scale(0.4);
         position: absolute;
-        content: url('../assets/img/flash2.svg');
       }
     }
 
@@ -159,10 +158,9 @@
     }
     &__left &__text {
       &::after {
-        top: 92%;
+        top: 98%;
         right: 5%;
         position: absolute;
-        content: url('../assets/img/flash.svg');
       }
     }
     &__left &__text {
@@ -207,7 +205,7 @@
     }
     &__left &__text {
       &::after {
-        top: 95%;
+        top: 99%;
         right: 5%;
       }
     }
@@ -281,22 +279,27 @@
     }
     &__left &__text::after {
       transform: scale(0.8);
-      top: 88%;
+      top: 93%;
       right: 30%;
     }
     &__left &__text::before {
       bottom: -100%;
       left: 65%;
     }
+    &__left &__text {
+      transform: rotate(4.13deg);
+    }
     &__semechka.second::after {
       bottom: 20%;
       left: 30%;
     }
     &__right &__text {
-      transform: translateY(70%);
+      transform: translateY(70%) rotate(-2.07deg);
       width: 100px;
+      border-radius: 15px;
+
       &::after {
-        content: url('../assets/img/flash-mobile.svg');
+        content: url('../assets/img/flash-mobile.png');
         transform: scale(1);
         top: 98%;
         right: 40%;
