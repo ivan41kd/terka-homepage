@@ -1,9 +1,6 @@
 .container {
-  padding-left: 64px;
+  padding-top: 0;
   max-width: 100%;
-}
-.container.main {
-  padding-right: 300px;
 }
 @media screen and (max-width: 1622px) {
   .container {

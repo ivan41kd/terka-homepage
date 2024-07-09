@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import logo from '../../../assets/icons/logo.svg';
-import tg from '../../../assets/icons/tg.png';
+import tg from '../../../assets/icons/tg.svg';
 import Link from 'next/link';
 export const IconList = () => {
   return (
@@ -8,7 +8,7 @@ export const IconList = () => {
       <Link href='/'>
         <Image priority src={logo} alt='logo' />
       </Link>
-      <a href='https://t.me/terkatalk'>
+      <a href='https://t.me/terkatalk' target='_blank'>
         <Image
           priority
           src={tg}

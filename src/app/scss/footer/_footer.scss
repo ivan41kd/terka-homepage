@@ -11,15 +11,16 @@
     content: '';
     background: rgb(244, 244, 244);
     top: 0%;
-    width: 100%;
+    width: 150%;
     height: 100%;
     border-radius: 100% 100% 0 0;
     z-index: 1;
+    object-fit: cover;
   }
   &__main-wrapper {
     position: relative;
     z-index: 2;
-    transform: translate(-7%, -5%);
+    transform: translate(-5%, -5%);
   }
   &__wrapper {
     justify-content: center;
@@ -56,6 +57,7 @@
     border-radius: 24px;
     box-shadow: 2px 2px 0px 0px rgb(0, 0, 0);
     background: rgb(255, 255, 255);
+    font-weight: 600;
   }
   &__right &__text {
     position: relative;
@@ -65,15 +67,15 @@
       top: 95%;
       right: 60%;
       position: absolute;
-      content: url('../assets/img/flash2.png');
+      content: url('../assets/img/flash2.svg');
     }
   }
   &__left &__text {
     &::after {
-      top: 100%;
+      top: 95%;
       right: 5%;
       position: absolute;
-      content: url('../assets/img/flash.png');
+      content: url('../assets/img/flash.svg');
     }
   }
   &__image-wrapper {
@@ -85,7 +87,7 @@
       top: 25%;
       right: -25%;
       bottom: 0;
-      content: url('../assets/img/semechka.png');
+      content: url('../assets/img/semechka.svg');
       display: block; /*adjust as needed*/
     }
   }
@@ -112,7 +114,7 @@
   }
 
   @media screen and (max-width: 1622px) {
-    padding-bottom: 0;
+    padding-bottom: 28px;
     &__text {
       width: 300px;
       padding: 12px;
@@ -130,11 +132,11 @@
       width: 160px;
       transform: rotate(-2.07deg);
       &::after {
-        top: 39%;
+        top: 50%;
         right: 40%;
         transform: scale(0.4);
         position: absolute;
-        content: url('../assets/img/flash2.png');
+        content: url('../assets/img/flash2.svg');
       }
     }
 
@@ -154,10 +156,10 @@
     }
     &__left &__text {
       &::after {
-        top: 100%;
+        top: 92%;
         right: 5%;
         position: absolute;
-        content: url('../assets/img/flash.png');
+        content: url('../assets/img/flash.svg');
       }
     }
     &__left &__text {
@@ -196,9 +198,9 @@
       line-height: 22px;
     }
     &__left &__text {
-      &::before {
-        bottom: -75%;
-        left: 95%;
+      &::after {
+        top: 95%;
+        right: 5%;
       }
     }
     &__left {
@@ -229,14 +231,14 @@
       transform: scale(0.8);
     }
     &::after {
-      border-radius: 20% 20% 0 0;
+      border-radius: 50% 50% 0 0;
     }
   }
   @media screen and (max-width: 660px) {
     padding-bottom: 0;
     &::after {
       border-radius: 10% 10% 0 0;
-      width: 100%;
+      width: 105%;
       height: 100%;
     }
     &__image {
@@ -282,9 +284,9 @@
       transform: translateY(70%);
       width: 100px;
       &::after {
-        content: url('../assets/img/flash-mobile.png');
+        content: url('../assets/img/flash-mobile.svg');
         transform: scale(1);
-        top: 95%;
+        top: 98%;
         right: 40%;
       }
     }

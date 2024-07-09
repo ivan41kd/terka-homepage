@@ -1,10 +1,12 @@
 .main {
-  padding-top: 53px;
+  padding-top: 10px;
+  margin-top: auto;
   position: relative;
   z-index: 2;
   &__wrapper {
     display: flex;
-    margin-bottom: 33px;
+    margin-bottom: 45px;
+    justify-content: center;
   }
   @media screen and (max-width: 1622px) {
     padding-top: 33px;
@@ -12,10 +14,18 @@
     justify-content: center;
     &__wrapper {
       flex-direction: column;
-      margin-bottom: 36px;
+      margin-bottom: 85px;
     }
   }
   @media screen and (max-width: 960px) {
     padding-top: 33px;
+    &__wrapper {
+      margin-bottom: 91px;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    &__wrapper {
+      margin-bottom: 58px;
+    }
   }
 }

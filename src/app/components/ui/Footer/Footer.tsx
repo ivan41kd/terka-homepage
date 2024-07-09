@@ -1,6 +1,6 @@
-import image from '../../../assets/img/footer-img.png';
-import semechka2 from '../../../assets/img/semechka2.png';
-import semechka from '../../../assets/img/semechka3.png';
+import image from '../../../assets/img/footer-img.svg';
+import semechka2 from '../../../assets/img/semechka2.svg';
+import semechka from '../../../assets/img/semechka3.svg';
 import Image from 'next/image';
 export const Footer = () => {
   return (

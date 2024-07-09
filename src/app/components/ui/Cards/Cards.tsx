@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import next from '../../../assets/ui/next.svg';
-import card1 from '../../../assets/img/image-sidim.png';
-import card2 from '../../../assets/img/image-lejim.png';
+import card1 from '../../../assets/img/image-sidim.svg';
+import card2 from '../../../assets/img/image-lejim.svg';
 export const Cards = () => {
   return (
     <div className='cards'>
