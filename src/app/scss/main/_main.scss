@@ -4,28 +4,29 @@
   position: relative;
   z-index: 2;
   &__wrapper {
+    position: relative;
     display: flex;
     margin-bottom: 45px;
     justify-content: center;
   }
   @media screen and (max-width: 1622px) {
-    padding-top: 33px;
+    padding-top: 16px;
     display: flex;
     justify-content: center;
     &__wrapper {
       flex-direction: column;
-      margin-bottom: 85px;
+      margin-bottom: 39px;
     }
   }
   @media screen and (max-width: 960px) {
-    padding-top: 33px;
+    padding-top: 16px;
     &__wrapper {
       margin-bottom: 20px;
     }
   }
   @media screen and (max-width: 660px) {
     &__wrapper {
-      margin-bottom: 58px;
+      margin-bottom: 40px;
     }
   }
 }
